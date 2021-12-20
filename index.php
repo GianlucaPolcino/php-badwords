@@ -14,6 +14,6 @@ $string = "Ciao, questa è una stringa in php";
 </head>
 <body>
     <h2><?php echo $string ?> ed è lunga <?php echo strlen($string) ?> lettere.</h2>
-    <h2><?php echo str_replace("php", "***", $string)?> ed è lunga <?php echo strlen(str_replace("php", "***", $string))?> lettere.</h2>
+    <h2><?php echo str_replace($_GET["censured"], "***", $string)?> ed è lunga <?php echo strlen(str_replace($_GET["censured"], "***", $string))?> lettere.</h2>
 </body>
 </html>
